@@ -19,7 +19,7 @@ except:
     separator = ' '
 
 for line in inp:
-    pair = line.rstrip().split(' ')
+    pair = line.rstrip().split(separator)
     outp.write(str(pair[1] + separator + pair[0] + '\n'))
 inp.close()
 outp.close()
